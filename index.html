@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI Customer Support Bot – Live Demo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Noto+Sans:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Support that answers at 2 a.m. in Hindi or English</h1>
+  <p>Try the demo for Sharma Sweets &amp; Gifts. Ask in English, Hindi or Hinglish, say “agent” for a human, then teach the bot a new answer in the Train tab.</p>
+</header>
+<main>
+  <section class="chat" aria-label="Chat demo">
+    <div class="ch-tabs" role="tablist" id="chTabs"></div>
+    <div class="bar"><div class="av">S</div><div><b id="botName">Sharma Sweets Assistant</b><small id="botSub">Online · replies instantly</small></div></div>
+    <div class="msgs" id="msgs" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form class="in" id="form"><input id="inp" autocomplete="off" placeholder="Type in Hindi or English…" aria-label="Message"><button class="btn pri" type="submit">Send</button></form>
+  </section>
+
+  <section class="side">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="view"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
